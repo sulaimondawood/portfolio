@@ -1,0 +1,135 @@
+.project {
+  margin-top: 100px;
+  position: relative;
+}
+.project .title {
+  font-family: var(--font);
+  font-size: 3rem;
+  text-align: center;
+}
+.project-wrp .first {
+  /* width: 80%; */
+  height: 60vh;
+  background-color: var(--secondary-1);
+  margin: 0 auto;
+  overflow: hidden;
+}
+.project-wrp img {
+  width: 70%;
+  display: block;
+  transition: 0.5s;
+  height: auto;
+  padding-top: 6rem;
+  margin: 0 auto;
+}
+.project-wrp img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.desc-wrp {
+  display: flex;
+  align-items: center;
+  padding: 1rem 3rem;
+  justify-content: space-between;
+}
+.p-desc {
+  width: 90%;
+  max-width: 500px;
+}
+.desc-wrp a {
+  color: var(--purple);
+  border: 1px solid var(--purple);
+  padding: 1em 2em;
+  border-radius: 50px;
+}
+.second {
+  background-color: oldlace !important;
+}
+.wrp-2 {
+  margin-top: 50px;
+}
+.p-stroke {
+  opacity: 0.2;
+  position: absolute;
+  transform: rotate(90deg);
+  right: -480px;
+  top: 200px;
+}
+.p-stroke-l {
+  opacity: 0.2;
+  position: absolute;
+  transform: rotate(90deg);
+  left: -500px;
+  top: 300px;
+}
+
+@media screen and (max-width: 768px) {
+  .project {
+    margin-top: 30px;
+    /* padding: 0 1rem; */
+    position: relative;
+  }
+  .project .title {
+    font-family: var(--font);
+    font-size: 2rem;
+    text-align: center;
+  }
+  .project-wrp .first {
+    height: 40vh;
+    background-color: var(--secondary-1);
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+  }
+  .project-wrp img {
+    width: 80%;
+    display: block;
+    transition: 0.5s;
+    height: auto;
+    /* padding-top: 6rem; */
+    margin: 0 auto;
+    padding: 0 2rem;
+    position: absolute;
+    bottom: 0;
+  }
+  .desc-wrp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 1rem;
+    justify-content: space-between;
+  }
+  .p-desc {
+    width: 90%;
+    max-width: 100%;
+  }
+  .desc-wrp a {
+    color: var(--purple);
+    border: 1px solid var(--purple);
+    padding: 0.6em 2em;
+    border-radius: 20px;
+  }
+  .second {
+    background-color: oldlace !important;
+  }
+  .wrp-2 {
+    margin-top: 50px;
+  }
+  .p-stroke {
+    opacity: 0.2;
+    position: absolute;
+    /* transform: rotate(90deg); */
+    display: none;
+    right: -480px;
+    top: 200px;
+    font-size: 6rem;
+  }
+  .p-stroke-l {
+    opacity: 0.2;
+    position: absolute;
+    transform: rotate(0deg);
+    left: 0px;
+    top: -10px;
+    font-size: 4rem !important;
+  }
+}

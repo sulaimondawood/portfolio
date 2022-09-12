@@ -1,13 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,600&family=Poppins:wght@200;300;400;600;700&display=swap");
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #dadff710;
+  backdrop-filter: blur(60px);
+  /* font-family: "Josefin Sans", sans-serif;
+  font-family: "Cinzel Decorative", cursive; */
+
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+:root {
+  --bg: #232c33;
+  --primary: #f9fbff;
+  /* --primary: #dadff7; */
+  --primary-1: #b5b2c2;
+  --secondary: #a0c1d1;
+  --secondary-1: #5a7d7c;
+  --font: "Cinzel Decorative", cursive;
+  --primary-2: #fff;
+  --red: #c84c09;
+  --purple: #420217;
+  --l-green: #d6f599;
+  --yellow: #d2ff28;
+  --green: #436436;
+}
+.App {
+  overflow: hidden;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 10rem;
+}
+a {
+  text-decoration: none;
+}
+.box {
+  width: 30px;
+  height: 30px;
+  background-color: var(--secondary);
+  position: absolute;
+}
+.green {
+  border-radius: 50%;
+
+  bottom: 20px;
+  background-color: var(--green) !important;
+}
+.black {
+  background-color: var(--bg) !important;
+  bottom: 50px;
+  left: 50%;
+  border-radius: 50%;
+}
+.l-green {
+  border-radius: 50%;
+  background-color: var(--secondary) !important;
+  right: 20px;
+  bottom: 500px;
+}
+.red {
+  background-color: var(--red);
+  top: 50px;
+  left: 30px;
+}
+.yellow {
+  background-color: var(--yellow);
+  border-radius: 50px;
+  top: 100px;
+  left: 40%;
+}
+.purple {
+  background-color: var(--purple);
+  bottom: 100px;
+  right: 500px;
+}
+.a-prm {
+  background-color: var(--red);
+  top: 30%;
+  left: 70%;
+}
+.a-green {
+  background-color: var(--yellow);
+  top: 70%;
+  left: 70%;
+  border-radius: 50%;
+}
+.a-black {
+  background-color: var(--primary-1);
+  top: 70px;
+  right: 300px;
+}
+.overlay {
+  -webkit-text-stroke: 1px;
+  color: transparent;
+  position: absolute;
+  font-size: 11rem;
+  /* z-index: -99; */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--secondary-1);
+  opacity: 0.1;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+  }
+  .a-prm {
+    top: 50%;
+    right: 10px;
+  }
 }

@@ -1,0 +1,154 @@
+.hero-sec {
+  /* width: 100%; */
+  height: 60vh;
+  overflow: hidden;
+  position: relative;
+}
+.main {
+  padding: 0 3rem;
+  margin-top: 90px;
+  text-align: center;
+}
+.main h1 {
+  /* font-size: 3rem; */
+  color: var(--bg);
+  font-weight: 300;
+  line-height: 24px;
+}
+.main .info p:nth-child(1) {
+  font-size: 2.5rem;
+  line-height: 24px;
+  color: var(--bg);
+  font-weight: 300;
+}
+.main .info .skill {
+  color: var(--bg);
+  font-size: 2.5rem;
+  line-height: 24px;
+  font-weight: 600;
+}
+.dawood {
+  width: 30px;
+  object-fit: fill;
+  object-position: center;
+  height: 30px;
+  border-radius: 50%;
+}
+.main .right {
+  background-color: #ffffff10;
+  backdrop-filter: blur(10px);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+  width: 400px;
+  height: 400px;
+  box-shadow: 0px 0px 20px #00000009;
+}
+.main .right-1 {
+  background-color: #ffffff10;
+  backdrop-filter: blur(10px);
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 100px;
+  width: 400px;
+  height: 400px;
+  box-shadow: 0px 0px 20px #00000009;
+}
+
+.blur {
+  background-color: var(--primary);
+  opacity: 0.3;
+  background-position: center;
+  background-size: contain;
+  z-index: -999;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 450px;
+  height: 450px;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 20px #00000020;
+}
+.links-wrapper .lists {
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+  justify-content: center;
+  background-color: red;
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+/* .overlay-bg-header {
+  position: absolute;
+  background-color: #232c3380;
+  width: 100%;
+  height: 100vh;
+  top: 5rem;
+  z-index: 99;
+} */
+@media screen and (max-width: 768px) {
+  .hero-sec {
+    height: 100vh;
+    position: relative;
+  }
+  .main {
+    padding: 0rem;
+    margin-top: 100px;
+    text-align: center;
+  }
+
+  .main .info p:nth-child(1) {
+    font-size: 2rem;
+  }
+  .main .info .skill {
+    color: var(--bg);
+    font-size: 1.5rem;
+    font-family: var(--font);
+  }
+
+  .main .right {
+    background-color: #ffffff10;
+    backdrop-filter: blur(10px);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0px 0px 20px #00000009;
+  }
+  .main .right-1 {
+    background-color: #ffffff10;
+    backdrop-filter: blur(10px);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 200px;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0px 0px 20px #00000009;
+  }
+
+  .blur {
+    background-color: var(--primary);
+    opacity: 0.5;
+    background-position: center;
+    background-size: contain;
+    z-index: -999;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 450px;
+    height: 450px;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 20px #00000020;
+  }
+}
