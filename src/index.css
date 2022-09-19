@@ -43,7 +43,7 @@ a {
   position: absolute;
 }
 .green {
-  border-radius: 50%;
+  border-radius: 40px;
 
   bottom: 20px;
   background-color: var(--green) !important;
@@ -52,40 +52,33 @@ a {
   background-color: var(--bg) !important;
   bottom: 50px;
   left: 50%;
-  border-radius: 50%;
+  border-radius: 1px;
 }
-.l-green {
-  border-radius: 50%;
-  background-color: var(--secondary) !important;
-  right: 20px;
-  bottom: 500px;
-}
-.red {
-  background-color: var(--red);
-  top: 50px;
-  left: 30px;
-}
+
 .yellow {
   background-color: var(--yellow);
-  border-radius: 50px;
+  border-radius: 2px;
   top: 100px;
   left: 40%;
 }
 .purple {
   background-color: var(--purple);
   bottom: 100px;
-  right: 500px;
+  border-radius: 10px;
+
+  right: 200px;
 }
 .a-prm {
   background-color: var(--red);
   top: 30%;
+  border-radius: 10px;
   left: 70%;
 }
 .a-green {
   background-color: var(--yellow);
   top: 70%;
   left: 70%;
-  border-radius: 50%;
+  /* border-radius: 50%; */
 }
 .a-black {
   background-color: var(--primary-1);

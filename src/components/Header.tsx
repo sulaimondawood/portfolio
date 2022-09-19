@@ -3,15 +3,46 @@ import Dawood from "../assets/dawood.jpg";
 import { AiOutlineClose } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub, FaTwitter } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { useState } from "react";
-const Header = () => {
+import { useEffect, useRef, useState } from "react";
+import { Link as HashLink } from "react-scroll";
+const Header = ({ refer1 }: any) => {
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
+
+  if (isNavOpen) {
+    document.body.style.overflowY = "hidden";
+  }
+
+  function navClosed() {
+    setIsNavOpen(!isNavOpen);
+    if (isNavOpen) {
+      document.body.style.overflowY = "visible";
+    }
+    // setIsNavOpen(!isNavOpen);
+  }
+
+  // useEffect(() => {
+  //   const option = {
+  //     root: null,
+  //     threshold: 0.5,
+  //   };
+  //   const observer = new IntersectionObserver((entries) => {
+  //     const entry = entries[0];
+  //     console.log(entry);
+  //     setIsSticky(entry.isIntersecting);
+  //   }, option);
+  //   observer.observe(refer1.current);
+  // }, []);
+
   return (
     <header className="header">
       <div className="container">
         <nav className="nav">
-          <div className="logo" onClick={() => setIsNavOpen(!isNavOpen)}>
-            Menu
+          <div
+            className="logo"
+            onClick={() => (isNavOpen ? navClosed() : setIsNavOpen(true))}
+          >
+            {isNavOpen ? "Close" : "Menu"}
           </div>
           <img src={Dawood} alt="" className="dawood" />
 
@@ -28,22 +59,55 @@ const Header = () => {
             </div>
           </div>
           <div
-            // className={
-            //   isNavOpen ? "links-container show-links" : "links-container"
-            // }
-            className="links-wrapper"
+            className={
+              isNavOpen ? "links-wrapper show-links" : "links-wrapper "
+            }
           >
-            {/* <div className="top">
-            <img src={Dawood} alt="" className="dawood" />
-            <div className="close" onClick={() => setIsNavOpen(false)}>
-              <AiOutlineClose />
+            <div className="top">
+              <div className="close" onClick={() => navClosed()}>
+                <AiOutlineClose />
+              </div>
             </div>
-          </div> */}
             <div className="lists">
-              <a href="#about">About</a>
-              <a href="#project">Project</a>
+              <HashLink
+                to="about"
+                spy={true}
+                smooth={true}
+                duration={1000}
+                onClick={() => navClosed()}
+              >
+                About
+              </HashLink>
+              <HashLink
+                to="project"
+                spy={true}
+                smooth={true}
+                duration={1000}
+                onClick={() => navClosed()}
+              >
+                Project
+              </HashLink>
 
-              <a href="#technology">Get In Touch</a>
+              <HashLink
+                to="technology"
+                spy={true}
+                smooth={true}
+                hashSpy={true}
+                duration={1000}
+                onClick={() => navClosed()}
+              >
+                Technologies
+              </HashLink>
+              <HashLink
+                to="get-in-touch"
+                spy={true}
+                smooth={true}
+                hashSpy={true}
+                duration={1000}
+                onClick={() => navClosed()}
+              >
+                Get In Touch
+              </HashLink>
             </div>
           </div>
         </nav>

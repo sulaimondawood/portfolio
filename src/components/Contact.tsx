@@ -1,13 +1,13 @@
 import "./Contact.css";
 import { FaLinkedinIn, FaInstagram, FaGithub, FaTwitter } from "react-icons/fa";
-
+import { useRef } from "react";
 const Contact = () => {
   return (
     <div className="container">
-      <footer className="footer">
+      <footer id="get-in-touch" className="footer">
         <h1>📞Get In Touch With Me🤝🏼</h1>
 
-        <a href="" className="gmail">
+        <a href="mailto:sulaimondawod@gmail.com" className="gmail">
           sulaimondawood@gmail.com 📞
         </a>
         <div className="social-link">

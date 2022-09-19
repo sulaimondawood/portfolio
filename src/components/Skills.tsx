@@ -4,19 +4,19 @@ import "./Skills.css";
 import { motion } from "framer-motion";
 const Skills = () => {
   return (
-    <section className="skills-sec">
+    <section id="technology" className="skills-sec">
       <div className="title">
         <h1>⚙ Technologies ⚙</h1>
         <div className="skill-flex">
           <motion.div
             initial={{ x: 0 }}
-            whileInView={{ x: ["300px", "0px"], transition: { duration: 20 } }}
-            // transition={{ duration: "10" }}
+            whileInView={{ x: ["800px", "0px"] }}
+            transition={{ duration: "40", repeat: Infinity }}
             className="top"
           >
             <p>JavaScript</p>
             <p>GraphQL</p>
-            <p>Tailwindcss 🤝🏼📣🥇</p>
+            <p>Tailwindcss </p>
             <p>Sass</p>
             <p>Css</p>
             <p>React.js</p>
@@ -28,7 +28,8 @@ const Skills = () => {
           </motion.div>
           <motion.div
             initial={{ x: 0 }}
-            whileInView={{ x: ["-300px", "0px"], transition: { duration: 20 } }}
+            whileInView={{ x: ["-800px", "0px"] }}
+            transition={{ duration: 40, ease: "easeInOut", yoyo: Infinity }}
             className="bottom"
           >
             <p>React.js</p>
@@ -37,7 +38,7 @@ const Skills = () => {
             <p>Rest Api</p>
             <p>JavaScript</p>
             <p>GraphQL</p>
-            <p>Tailwindcss 🤝🏼📣🥇</p>
+            <p>Tailwindcss </p>
             <p>Sass</p>
             <p>Css</p>
             <p>Github</p>

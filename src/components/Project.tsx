@@ -12,11 +12,13 @@ const Project = () => {
           </div>
           <div className="desc-wrp">
             <p className="p-desc">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci
-              molestiae ab, exercitationem unde debitis alias in tempora placeat
-              aperiam incidunt.
+              <h1>CryptoByte</h1>A cryptocurrency website that tracks Trade
+              Market Capitalization, ATH(All Time High), ATL(All Time Low).It
+              also entails details about each cryptocurrency available on the
+              website alongside their official platform to get a fully detailed
+              information
             </p>
-            <a href="">Visit Site </a>
+            <a href="https://crpto-byte-dawood.netlify.app/">Visit Site </a>
           </div>
         </div>
         <div className="project-wrp wrp-2">
@@ -25,11 +27,13 @@ const Project = () => {
           </div>
           <div className="desc-wrp">
             <p className="p-desc">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci
-              molestiae ab, exercitationem unde debitis alias in tempora placeat
-              aperiam incidunt.
+              <h1>Gymnastic Landing Page</h1>
+              This is a simple gymnastic landing page that contains some reviews
+              from past clients that were able to achieve their ideal body, the
+              different method or plans they have at the moment and some core
+              features
             </p>
-            <a href="">Visit Site </a>
+            <a href="https://gym-landing-dawood.netlify.app/">Visit Site </a>
           </div>
         </div>
         <div className="overlay p-stroke">PROJECTS</div>
